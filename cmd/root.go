@@ -8,8 +8,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/yvesbonami/advent-of-code-go/2024/day01"
+	p202401 "github.com/yvesbonami/advent-of-code-go/2024/day01"
 	p202402 "github.com/yvesbonami/advent-of-code-go/2024/day02"
+  p202403 "github.com/yvesbonami/advent-of-code-go/2024/day03"
+
 )
 
 var (
@@ -49,6 +51,8 @@ func runSolution(year int, day int) error {
 			p202401.Solve()
 		case 2:
 			p202402.Solve()
+    case 3:
+      p202403.Solve()
 		default:
 			return errors.New(fmt.Sprintf("No solutions for year %v - day %v", year, day))
 		}
