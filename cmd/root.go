@@ -12,6 +12,7 @@ import (
 	p202402 "github.com/yvesbonami/advent-of-code-go/2024/day02"
 	p202403 "github.com/yvesbonami/advent-of-code-go/2024/day03"
 	p202404 "github.com/yvesbonami/advent-of-code-go/2024/day04"
+  p202405 "github.com/yvesbonami/advent-of-code-go/2024/day05"
 )
 
 var (
@@ -55,6 +56,8 @@ func runSolution(year int, day int) error {
 			p202403.Solve()
 		case 4:
 			p202404.Solve()
+    case 5: 
+    p202405.Solve()
 		default:
 			return errors.New(fmt.Sprintf("No solutions for year %v - day %v", year, day))
 		}
